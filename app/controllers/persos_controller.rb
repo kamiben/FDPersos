@@ -25,7 +25,10 @@ class PersosController < ApplicationController
   # GET /persos/new.xml
   def new
     @perso = Perso.new
-    @attribut = Attribut.new
+    ['Profession','Sexe'].each do |nom|
+      @perso.attributs.build(:nom=>nom)
+    end
+    #2.times {@perso.attributs.build(:nom=>'test')}
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @perso }
@@ -41,12 +44,12 @@ class PersosController < ApplicationController
   # POST /persos.xml
   def create
     @perso = Perso.new(params[:perso])
-    @attribut = @perso.attributs.new(params[:attribut])
-    @attribut.nom = "Metiers"
+      params[:attribut].each do  |attribut| 
+        @perso.attributs.build({:nom => attribut[0],:val => attribut[1][:val] })
+      end
+
     respond_to do |format|
       if @perso.save 
-        @attribut.perso_id = @perso.id 
-        @attribut.save
         format.html { redirect_to(@perso, :notice => 'Perso was successfully created.') }
         format.xml  { render :xml => @perso, :status => :created, :location => @perso }
       else

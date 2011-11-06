@@ -9,9 +9,12 @@ CTHULHU</strong>
 <div class="personnage">
 <%= f.label :nom %>: <%= f.text_field :nom,  :size => 10 %> Joueur : <%= f.text_field :joueur,  :size => 10 %> <br />
 
-<%= label :attribut, :nom, "Profession" %>: 
-<%= text_field :attribut, :val,  :size => 10 %> 
 
+<%= @perso.attributs.each do |attribut| %>
+  <%= fields_for "attribut[#{attribut.nom}]", attribut do |f| %>
+    <p><%= f.label attribut.nom%><%= f.text_field :val %></p>
+  <% end %>
+<% end %>
 </div>
 
 <div class="portrait">
