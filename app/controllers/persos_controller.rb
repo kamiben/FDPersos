@@ -14,7 +14,7 @@ class PersosController < ApplicationController
   # GET /persos/1.xml
   def show
     @perso = Perso.find(params[:id])
-
+    @cars = @perso.attributs.find(:all)
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @perso }
@@ -22,10 +22,11 @@ class PersosController < ApplicationController
   end
 
   # GET /persos/new
+
   # GET /persos/new.xml
   def new
     @perso = Perso.new
-    ['Profession','Sexe'].each do |nom|
+    ['Profession','Age','Sexe','Nationalite','Residence','FOR','DEX','INT','Idee','CON','APP','POU','Chance','TAI','SAN','EDU','Connaissance','Ecoles','Diplomes','Bonus-Penalites',"Anthropologie","Esquiver","Piloter","Archeologie","Geologie","."].each do |nom|
       @perso.attributs.build(:nom=>nom)
     end
     #2.times {@perso.attributs.build(:nom=>'test')}
