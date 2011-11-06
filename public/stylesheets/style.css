@@ -1,0 +1,206 @@
+body
+{
+	font-family: serif;
+	font-size: 12px;
+	
+}
+
+div, td
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	border: 0px;
+}
+
+/* -------------------------------------------------- */
+
+.zone01
+{
+	position: absolute;
+	left: 2px; top: 2px;
+	width: 500px;
+	height: 60px;
+	border: 1px solid #00ff00;	
+}
+
+.cthulhu
+{
+	padding: 0px 2px 0px 2px;
+	font-size: 24px;
+	position: absolute;
+	left: 0px; top: 0px;
+	background-color: #aaaacc;
+}
+
+.personnage
+{
+	padding: 0px 2px 0px 2px;
+	position: absolute;
+	left: 147px; top: 0px;
+	background-color: #aaaacc;
+}
+
+/* -------------------------------------------------- */
+
+.zone02
+{
+	position: absolute;
+	left: 2px; top: 100px;
+	width: 500px;
+	height: 135px;
+	border: 1px solid #00ff00;	
+}
+
+.caracs
+{
+	padding: 0px 2px 0px 2px;
+	position: absolute;
+	left: 2px; top: 0px;
+	background-color: #aaaacc;
+	width: 220px;
+}
+
+.etudes
+{
+	padding: 0px 2px 0px 2px;
+	position: absolute;
+	left: 2px; top : 100px;
+	background-color: #aaaacc;
+	width: 220px;
+}
+
+.magie
+{
+	padding: 0px 2px 0px 2px;
+	position: absolute;
+	left: 290px; top: 0px;
+	background-color: #aaaacc;
+}
+
+.vie
+{
+	padding: 0px 2px 0px 2px;
+	position: absolute;
+	left: 350px; top: 0px;
+	background-color: #aaaacc;
+}
+
+/* -------------------------------------------------- */
+
+.zone03
+{
+	left: 2px; top: 300px;
+	position: absolute;
+	width: 500px;
+	height: 520px;
+	border: 1px solid #00ff00;	
+}
+
+.san
+{
+	position: absolute;
+	left: 0px; top: 0px;
+	background-color: #aaaacc;
+}
+
+.comps
+{
+	position: absolute;
+	left: 0px; top: 95px;
+	background-color: #aaaacc;
+}
+
+/* -------------------------------------------------- */
+
+.zone04
+{
+	left: 520px; top: 2px;
+	position: absolute;
+	width: 620px;
+	height: 750px;
+	border: 1px solid #00ff00;	
+}
+
+.armes_feu
+{
+	position: absolute;
+	left: 0px; top: 0px;
+	background-color: #aaaacc;
+}
+
+.armes_cac
+{
+	position: absolute;
+	left: 290px; top: 0px;
+	background-color: #aaaacc;
+}
+
+.fric
+{
+	position: absolute;
+	left: 0px; top: 165px;
+	background-color: #aaaacc;
+}
+
+.frictab
+{
+	vertical-align: top;
+	width: 200px;
+}
+
+.infos
+{
+	position: absolute;
+	left: 0px; top: 270px;
+	background-color: #aaaacc;
+	width: 300px;
+}
+
+.materiel
+{
+	position: absolute;
+	left: 0px; top: 600px;
+	background-color: #aaaacc;
+	width: 300px;
+}
+
+.vehicules
+{
+	position: absolute;
+	left: 0px; top: 660px;
+	background-color: #aaaacc;
+	width: 300px;
+}
+
+.autres
+{
+	position: absolute;
+	left: 310px; top: 270px;
+	background-color: #aaaacc;
+	width: 300px;
+}
+
+/* -------------------------------------------------- */
+
+
+.center
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.portrait
+{
+	position: absolute;
+	right: 10px; top: 2px;
+	background-color: #aaaacc;
+}
+
+
+
+
+
+
+

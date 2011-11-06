@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  perso_id: 1
+  nom: MyString
+  val: MyString
+
+two:
+  perso_id: 1
+  nom: MyString
+  val: MyString
