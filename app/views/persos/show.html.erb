@@ -61,45 +61,12 @@ POINTS DE SANTE MENTALE<br />
 </div>
 <div class="comps">
 <table>
-<tr><%=tabcarac(["Anthropologie","Esquiver","Piloter"]).html_safe%></tr>
-<tr><%=tabcarac(["Archeologie","Geologie","."]).html_safe%></tr>
-
-<tr>
-<td>Arts (05)</td><td></td>
-<td>Grimper (40)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>.........................</td><td>..... |X|</td>
-<td>Histoire (20)</td><td>..... |X|</td>
-<td>Premiers Soins (30)</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td></td><td>..... |X|</td>
-<td>Histoire Naturelle (10)</td><td>..... |X|</td>
-<td>Psychanalyse (01)</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Arts Martiaux (01)</td><td>..... |X|</td>
-<td>Lancer (25)</td><td>..... |X|</td>
-<td>Psychologie (05)</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Astronomie (01)</td><td>..... |X|</td>
-<td>Langue Natale (EDU X 5)</td><td></td>
-<td>Sauter (25)</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Baratin (05)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-<td>Se Cacher (10)</td><td>..... |X|</td>
-</tr>
-
+<%=tabcaractotale(["Anthropologie","Esquiver","Piloter","Archeologie","Geologie",".","Arts","Grimper",".."]).html_safe%>
+<tr><%=tabcarac(["...","Histoire","PremiersSoins"]).html_safe%></tr>
+<tr><%=tabcarac(["....","HistoireNaturelle","Psychanalyse"]).html_safe%></tr>
+<tr><%=tabcarac(["ArtsMartiaux","Lancer","Psychologie"]).html_safe%></tr>
+<tr><%=tabcarac(["Astronomie","LangueNatale","Sauter"]).html_safe%></tr>
+<tr><%=tabcarac(["Baratin",".....","Se Cacher"]).html_safe%></tr>
 <tr>
 <td>Bibliothèque (25)</td><td>..... |X|</td>
 <td>Langues Etrangères (01)</td><td></td>
