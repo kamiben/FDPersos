@@ -1,5 +1,27 @@
-<h1>New perso</h1>
+<div class="zone01">
+<div class="cthulhu">
+<strong>L'APPEL DE<br />
+CTHULHU</strong>
+</div>
 
-<%= render 'form' %>
 
+<% form_for @perso do |f| %>
+<div class="personnage">
+<%= f.label :nom %>: <%= f.text_field :nom,  :size => 10 %> Joueur : <%= f.text_field :joueur,  :size => 10 %> <br />
+
+<%= label :attribut, :nom, "Profession" %>: 
+<%= text_field :attribut, :val,  :size => 10 %> 
+
+</div>
+
+<div class="portrait">
+
+<p>
+
+</p> 
+</div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+ <%= submit_tag %>
 <%= link_to 'Back', persos_path %>
+<% end %> 
+
