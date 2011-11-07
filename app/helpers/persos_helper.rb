@@ -1,7 +1,12 @@
 module PersosHelper
 
 def carac(attribut)
-"#{attribut} : #{@perso.attributs.find_by_nom(attribut).val}"
+if (@perso.attributs.find_by_nom(attribut).nil?)
+      "#{attribut} : "
+    else 
+      "#{attribut} : #{@perso.attributs.find_by_nom(attribut).val}"
+    end
+
 end
 
 def tabcaracarmes(attribut)
