@@ -61,103 +61,104 @@ POINTS DE SANTE MENTALE<br />
 </div>
 <div class="comps">
 <table>
-<%=tabcaractotale(["Anthropologie","Esquiver","Piloter","Archeologie","Geologie",".","Arts","Grimper",".."]).html_safe%>
-<tr><%=tabcarac(["...","Histoire","PremiersSoins"]).html_safe%></tr>
-<tr><%=tabcarac(["....","HistoireNaturelle","Psychanalyse"]).html_safe%></tr>
-<tr><%=tabcarac(["ArtsMartiaux","Lancer","Psychologie"]).html_safe%></tr>
-<tr><%=tabcarac(["Astronomie","LangueNatale","Sauter"]).html_safe%></tr>
-<tr><%=tabcarac(["Baratin",".....","Se Cacher"]).html_safe%></tr>
-<tr>
-<td>Bibliothèque (25)</td><td>..... |X|</td>
-<td>Langues Etrangères (01)</td><td></td>
-<td>Serrurerie (01)</td><td>..... |X|</td>
-</tr>
+<%=tabcaractotale(["Anthropologie","Esquiver","Piloter","Archeologie","Geologie",".",".","Arts","Grimper","..","...","Histoire","PremiersSoins","....","HistoireNaturelle","Psychanalyse","ArtsMartiaux","Lancer","Psychologie","Astronomie","LangueNatale","Sauter","Baratin",".....","Se Cacher"",Bibliotheque","Langues Etrangeres","Serrurerie","Biologie","......","Suivre une Piste","Bloquer (DEX X 2)",".......","Trouver Objet Cache (25)","Chimie (01)","Marchandage (05)","........","Comptabilite (10)","Mecanique (20)",".........","Conduire automobile (20)","Medecine (05)","..........","Conduire Engin lourd (01)","Monter a Cheval (05)","...........","Credit (15)","Mythe de Cthulhu","..","Criminalistique (01)","Nager (25)",".............","Deguisement (01)","Navigation (10)",".............","Discretion (15)","Occultisme (05)","...............","Dissimulation (15)","Persuasion (15)","................","Droit (05)","Pharmacologie (01)",".................","Ecouter (25)","Photographie (10)","..................","Electricite (10)","Physique (01)","..................."]).html_safe%>
 
-<tr>
-<td>Biologie (01)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-<td>Suivre une Piste (10)</td><td>..... |X|</td>
-</tr>
 
-<tr>
-<td>Bloquer (DEX X 2)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-<td>Trouver Objet Caché (25)</td><td>..... |X|</td>
-</tr>
+</table>
+</div>
+</div>
+<div class="zone04">
+<div class="armes_feu">
+ARMES à Feu<br />
+<table class="center">
+<tr><td>Arme</td><td>Dom.</td><td>Portée</td><td>Panne</td><td>Empal.</td><td>Tirs</td><td>PdV</td><td>Mun.</td></tr>
+<tr><%=tabcaracarmes(["Arme1","ArmeDom1","ArmePor1","ArmePan1","ArmeEmpal1","ArmeTirs1","ArmePdv1","ArmeMun1"]).html_safe%></tr>
+<tr><%=tabcaracarmes(["Arme2","ArmeDom2","ArmePor2","ArmePan2","ArmeEmpal2","ArmeTirs2","ArmePdv2","ArmeMun2"]).html_safe%></tr>
+<tr><%=tabcaracarmes(["Arme3","ArmeDom3","ArmePor3","ArmePan3","ArmeEmpal3","ArmeTirs3","ArmePdv3","ArmeMun3"]).html_safe%></tr>
+<tr><td>..........</td><td>..........</td><td>..........</td><td>..........</td><td>..........</td><td>..........</td><td>..........</td><td>..........</td></tr>
+<tr><td>..........</td><td>..........</td><td>..........</td><td>..........</td><td>..........</td><td>..........</td><td>..........</td><td>..........</td></tr>
+<tr><td>..........</td><td>..........</td><td>..........</td><td>..........</td><td>..........</td><td>..........</td><td>..........</td><td>..........</td></tr>
+</table>
+</div>
+<div class="armes_cac">
+ARMES de Corps à Corps<br />
+<table class="center">
+<tr><td>Arme</td><td>%</td><td>Dom</td><td>Att/R</td><td>PdV</td><td></td></tr>
+<tr><td>Coup de Pied (25)</td><%=tabcaracarmes(["Coupdepiedpct","Coupdepieddom","Coupdepiedatt","Coupdepiedpdv"]).html_safe%></tr>
+<tr><td>Coup de Poing (50)</td><%=tabcaracarmes(["Coupdepoingpct","Coupdepoinfdom","Coupdepoingatt","Coupdepoingpdv"]).html_safe%></tr>
+<tr><td>Coup de Tête (10)</td><%=tabcaracarmes(["Coupdetetepct","Coupdetetedom","Coupdeteteatt","Coupdetetepdv"]).html_safe%></tr>
+<tr><td>Lutte (25)</td><%=tabcaracarmes(["Luttepct","Luttedom","Lutteatt","Luttepdv"]).html_safe%></tr>
+<tr><%=tabcaracarmes(["NomArmeCac","Armecacpct","Armecacdom","Armecacatt","Armecacpdv"]).html_safe%></tr>
+<tr><%=tabcaracarmes(["NomArmeCac2","Armecacpct2","Armecacdom2","Armecacatt2","Armecacpdv2"]).html_safe%></tr>
+</table>
+</div>
 
+<div class="fric">
+<table>
 <tr>
-<td>Chimie (01)</td><td>..... |X|</td>
-<td>Marchandage (05)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Comptabilité (10)</td><td>..... |X|</td>
-<td>Mécanique (20)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Conduire automobile (20)</td><td>..... |X|</td>
-<td>Médecine (05)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Conduire Engin lourd (01)</td><td>..... |X|</td>
-<td>Monter à Cheval (05)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Crédit (15)</td><td>..... |X|</td>
-<td>Mythe de Cthulhu</td><td>.....</td>
-<td>.........................</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Criminalistique (01)</td><td>..... |X|</td>
-<td>Nager (25)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Déguisement (01)</td><td>..... |X|</td>
-<td>Navigation (10)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Discrétion (15)</td><td>..... |X|</td>
-<td>Occultisme (05)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Dissimulation (15)</td><td>..... |X|</td>
-<td>Persuasion (15)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Droit (05)</td><td>..... |X|</td>
-<td>Pharmacologie (01)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Ecouter (25)</td><td>..... |X|</td>
-<td>Photographie (10)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
-</tr>
-
-<tr>
-<td>Electricité (10)</td><td>..... |X|</td>
-<td>Physique (01)</td><td>..... |X|</td>
-<td>.........................</td><td>..... |X|</td>
+<td class="frictab">
+Revenus : .................................<br />
+..................................................<br />
+Economies : ..............................<br />
+..................................................<br />
+Argent de poche : ....................<br />
+..................................................<br />
+</td>
+<td class="frictab">Biens personnels<br />
+..................................................<br />
+..................................................<br />
+..................................................<br />
+..................................................<br />
+..................................................</td>
+<td class="frictab">Richesse Réelle<br />
+..................................................<br />
+..................................................<br />
+..................................................<br />
+..................................................<br />
+..................................................</td>
 </tr>
 </table>
 </div>
+
+<div class="infos">
+Informations Personnelles<br />
+<br />
+Description :<br />
+<br />
+<br />
+Famille / Amis :<br />
+<br />
+<br />
+Crises de Folie :<br />
+<br />
+<br />
+Blessures :<br />
+<br />
+<br />
+Cicatrices / Balafres :<br />
+<br />
+<br />
+</div>
+
+<div class="materiel">
+Matériel d'Aventure et autres Possessions<br />
+<br /><br /><br /><br /><br /><br />
+</div>
+
+<div class="vehicules">
+Véhicules<br />
+<br /><br />
+</div>
+
+<div class="autres">
+Entitées recontrées :<br />
+<br /><br /><br /><br /><br /><br />
+Ouvrages / Grimoires lus :<br />
+<br /><br /><br /><br /><br /><br />
+Objets Magiques / Sortilèges Connus :<br />
+<br /><br /><br /><br /><br /><br />
+</div>
+
 </div>
 <div class="portrait">
 <p> 

@@ -26,7 +26,7 @@ class PersosController < ApplicationController
   # GET /persos/new.xml
   def new
     @perso = Perso.new
-    ['Profession','Age','Sexe','Nationalite','Residence','FOR','DEX','INT','Idee','CON','APP','POU','Chance','TAI','SAN','EDU','Connaissance','Ecoles','Diplomes','Bonus-Penalites',"Anthropologie","Esquiver","Piloter","Archeologie","Geologie","."].each do |nom|
+    ['Profession','Age','Sexe','Nationalite','Residence','FOR','DEX','INT','Idee','CON','APP','POU','Chance','TAI','SAN','EDU','Connaissance','Ecoles','Diplomes','Bonus-Penalites',"Anthropologie","Esquiver","Piloter","Archeologie","Geologie",".",".","Arts","Grimper","..","...","Histoire","PremiersSoins","....","....","HistoireNaturelle","Psychanalyse","ArtsMartiaux","Lancer","Psychologie","Astronomie","LangueNatale","Sauter","Baratin",".....","Se Cacher"",Bibliotheque","Langues Etrangeres","Serrurerie","Biologie","......","Suivre une Piste","Bloquer (DEX X 2)",".......","Trouver Objet Cache (25)","Chimie (01)","Marchandage (05)","........","Comptabilite (10)","Mecanique (20)",".........","Conduire automobile (20)","Medecine (05)","..........","Conduire Engin lourd (01)","Monter a Cheval (05)","...........","Credit (15)","Mythe de Cthulhu","..","Criminalistique (01)","Nager (25)",".............","Deguisement (01)","Navigation (10)",".............","Discretion (15)","Occultisme (05)","...............","Dissimulation (15)","Persuasion (15)","................","Droit (05)","Pharmacologie (01)",".................","Ecouter (25)","Photographie (10)","..................","Electricite (10)","Physique (01)","..................."].each do |nom|
       @perso.attributs.build(:nom=>nom)
     end
     #2.times {@perso.attributs.build(:nom=>'test')}

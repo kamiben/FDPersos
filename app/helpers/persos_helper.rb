@@ -4,6 +4,18 @@ def carac(attribut)
 "#{attribut} : #{@perso.attributs.find_by_nom(attribut).val}"
 end
 
+def tabcaracarmes(attribut)
+  out = ""
+  attribut.each do |a| 
+    if (@perso.attributs.find_by_nom(attribut).nil?)
+      out = out <<   "<td>0</td>"
+    else 
+      out = out << " <td>#{@perso.attributs.find_by_nom(attribut).val} </td>"
+    end
+  end
+  out
+end
+
 def tabcarac(attribut)
   out = ""
 attribut.each do |a| 
